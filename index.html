@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment ZuraStore | Official All Payment ZuraHosting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-wallet"></i>
+                    <span>ZuraHost Payment</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#list-payment">All List Payment</a></li>
+                        <li><a href="#instruksi">Instruksi</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>All Payment ZuraHosting</h1>
+            <p>Disinilah semua metode list payment ZURA-HOSTING Contoh Nya Kek Dana, dan QRIS untuk semisal kamu ada
+                transaksi Yg Harus Di Bayar Ke Ewalet Zura</p>
+        </div>
+    </section>
+
+    <section id="list-payment" class="list-payment">
+        <div class="container">
+            <div class="section-title">
+                <h2>All Payment</h2>
+            </div>
+
+            <div class="payment-cards">
+                <div class="payment-card">
+                    <div class="payment-header">
+                        <div class="payment-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="payment-title">Transfer Bank</div>
+                    </div>
+
+                    <div class="payment-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Nama Bank:</div>
+                            <div class="detail-value">Bank Central Asia (BCA)</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Nomor:</div>
+                            <div class="detail-value">-</div>
+                            <button class="copy-btn" onclick="copyToClipboard('-')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Atas Nama:</div>
+                            <div class="detail-value">T.TR* PURWA**********</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-card">
+                    <div class="payment-header">
+                        <div class="payment-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="payment-title">E-Wallet Dana</div>
+                    </div>
+
+                    <div class="payment-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Nomor Dana:</div>
+                            <div class="detail-value">089523523000</div>
+                            <button class="copy-btn" onclick="copyToClipboard('089523523000')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Atas Nama:</div>
+                            <div class="detail-value">W**IL*H</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-card">
+                    <div class="payment-header">
+                        <div class="payment-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="payment-title">E-Wallet Gopay</div>
+                    </div>
+                
+                    <div class="payment-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Nomor Gopay:</div>
+                            <div class="detail-value">089523523000</div>
+                            <button class="copy-btn" onclick="copyToClipboard('089523523000')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Atas Nama:</div>
+                            <div class="detail-value">ZuraHosting</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-card">
+                    <div class="payment-header">
+                        <div class="payment-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <div class="payment-title">Payment Qris</div>
+                    </div>
+
+                    <div class="qris-container">
+                        <button class="btn btn-block" id="open-qris-modal">Klik Untuk Payment Qris</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instruksi" class="instruksi">
+        <div class="container">
+            <div class="section-title">
+                <h2>Instruksi Pembayaran</h2>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Pilih Metode Pembayaran</h3>
+                        <p>Pilih metode pembayaran yang Anda inginkan dari berbagai pilihan yang tersedia, termasuk
+                            dana, dompet
+                            digital, atau QRIS.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Lakukan Pembayaran</h3>
+                        <p>Transfer jumlah yang tepat ke salah satu nomor Ewalet kami atau Scan QRIS menggunakan
+                            aplikasi Seperti Dana atau aplikasi
+                            e-wallet Yg Kamu Gunain.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Konfirmasikan Pembayaran Kamu</h3>
+                        <p>Silahkan Setelah kamu Transfer Ke Salah Satu Method, Mohon Kirim Kan Bukti Transfer Atau
+                            Screenshot Bukti Transfer Ke Owner Whatsapp Ini :</p><a
+                            href="http://wa.me/6289523523000">6289523523000</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Kami menyediakan solusi pembayaran yang aman demi kenyamanan Anda. Semua transaksi dilindungi dan terpantau.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#list-payment">Payment Methods</a></li>
+                        <li><a href="#instruksi">How to Pay</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> mfc877751@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +62 895-2352-3000</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Yogyakarta, Indonesia</li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="https://wa.me/6289523523000"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/panggilajarazz.tech"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@zuradev"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 Zura Hosting. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="qris-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Payment Qris</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="qris-payment-form" id="qris-form">
+                <div class="form-group">
+                    <label for="modal-nominal">Harga Produk (IDR)</label>
+                    <input type="number" id="modal-nominal" placeholder="Masukin Nominal Produk" min="500" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-whatsapp">Nomor WhatsApp/Tele</label>
+                    <input type="tel" id="modal-whatsapp" placeholder="6288xxxxxx / t.me/xxx" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-product">Produk</label>
+                    <input type="text" id="modal-product" placeholder="Masukan Nama Produk / Barang Nya" required>
+                </div>
+                <button class="btn btn-block" id="generate-qris">Konfirmasi</button>
+            </div>
+
+            <div class="qris-display" id="qris-display">
+                <div class="qris-code" id="qris-code">
+                </div>
+                <div class="qris-text">Scan Qris Ini Untuk Bayar 😋</div>
+
+                <div class="payment-status-container" id="payment-status-container">
+                    <div class="payment-status status-pending" id="payment-status">
+                        <i class="fas fa-spinner fa-spin"></i> Menungu Dibayar 😑...
+                    </div>
+                    <div class="countdown">Sisa Waktu: <span id="countdown">10:00</span></div>
+                    <button class="btn btn-danger btn-block" id="cancel-payment">Cancel Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="receipt-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Kwitansi Pembayaran</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="receipt">
+                <div class="receipt-header">
+                    <h3>Zura Hosting</h3>
+                    <p>Pembayaran Berhasil</p>
+                </div>
+                <div class="receipt-body" id="receipt-content">
+                </div>
+                <div class="receipt-footer">
+                    <p>Terimakasih Udah Bayar Bang/kak 😋</p>
+                    <p id="receipt-date"></p>
+                </div>
+            </div>
+            <button class="btn btn-block" id="print-receipt">Print Receipt</button>
+            <button class="btn btn-block close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
